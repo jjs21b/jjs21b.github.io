@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jack Schwartz | Machine Learning &amp; Scientific Computing</title>
+    <meta
+      name="description"
+      content="Portfolio of Jack Schwartz, a computational scientist building machine-learning systems, data products, and reliable research workflows."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jack Schwartz | Machine Learning &amp; Scientific Computing" />
+    <meta
+      property="og:description"
+      content="Machine learning, scientific computing, and research engineering projects built around real data and careful evaluation."
+    />
+    <meta property="og:url" content="https://jjs21b.github.io/" />
+    <meta property="og:image" content="https://jjs21b.github.io/assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Jack Schwartz, home">JS<span>.</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="#publication">Publication</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="kicker">Computational scientist · Machine learning engineer</p>
+          <h1>I build reliable models, data products, and research workflows for <em>complex data.</em></h1>
+          <p class="hero-description">
+            I&apos;m Jack Schwartz, an M.S. graduate in Computational Science with experience spanning
+            machine learning, scientific computing, medical imaging, atmospheric modeling, and interactive software.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore my work</a>
+            <a class="button secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">View résumé</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Profile summary">
+          <div class="profile-mark">JS</div>
+          <div><span>Based in</span><strong>Port St. Lucie, Florida</strong></div>
+          <div><span>Focus</span><strong>Machine learning, scientific computing &amp; research engineering</strong></div>
+          <div><span>Currently exploring</span><strong>Applied ML, data science &amp; scientific software roles</strong></div>
+        </aside>
+      </section>
+
+      <section class="publication-section" id="publication">
+        <div class="publication-label">
+          <p class="kicker">Peer-reviewed publication</p>
+          <span>Atmospheric Science Letters · 2026</span>
+        </div>
+        <div class="publication-content">
+          <h2>The Multiscale Non-Gaussian Statistics of Free-Running 1000-Member General Circulation Model Ensembles</h2>
+          <p>Co-authored research examining how ensemble atmospheric statistics vary across variables, spatial scales, pressure levels, and seasons.</p>
+          <a href="https://doi.org/10.1002/asl2.70048" target="_blank" rel="noreferrer">Read the publication <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Selected work</p>
+            <h2>Projects built around real data and difficult questions.</h2>
+          </div>
+          <p>Each project pairs its method with an outcome, evaluation, and limitation. The result is work that can be inspected, challenged, and improved.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="project-number">01</span>
+              <p class="project-eyebrow">Machine Learning · Medical Imaging</p>
+              <h3>Medical Image Reconstruction</h3>
+              <p class="project-description">Developed a data-consistent cascade U-Net workflow for reconstructing 8x undersampled single-coil knee MRI from the fastMRI dataset. The model iteratively refines zero-filled inputs while preserving measured k-space values.</p>
+              <p class="project-result"><strong>What the evaluation showed</strong>The best illustrated slice achieved SSIM 0.9533, PSNR 39.97 dB, and NMSE 0.0011. The broader evaluation also included error maps and hard-case analysis rather than relying on one aggregate score.</p>
+              <ul class="tool-list" aria-label="Medical Image Reconstruction tools">
+                <li>PyTorch</li><li>Cascade U-Net</li><li>fastMRI</li><li>SSIM</li>
+              </ul>
+              <div class="project-links" aria-label="Medical Image Reconstruction links">
+                <span class="project-link-item"><a href="mailto:jschwartz1125@gmail.com">Request project details</a></span>
+              </div>
+            </div>
+            <figure class="project-visual">
+              <div class="project-image-frame">
+                <img src="assets/projects/medical-reconstruction-comparison-v3.png" alt="Zero-filled knee MRI input, model reconstruction, ground-truth target, and absolute error map" loading="lazy" />
+              </div>
+              <figcaption>Zero-filled input, model reconstruction, target, and absolute error for an 8x undersampled knee MRI slice.</figcaption>
+            </figure>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="project-number">02</span>
+              <p class="project-eyebrow">Deep Learning · Computer Vision</p>
+              <h3>3D Left-Atrium Segmentation</h3>
+              <p class="project-description">Built an end-to-end PyTorch pipeline for segmenting the left atrium from 3D cardiac MRI volumes, including NIfTI preprocessing, a compact 3D U-Net, checkpoint selection, and a Streamlit training dashboard.</p>
+              <p class="project-result"><strong>What the evaluation showed</strong>Reached approximately 0.877 validation Dice and 0.0845 best validation loss, with close agreement between the predicted and ground-truth masks in the held-out examples.</p>
+              <ul class="tool-list" aria-label="3D Left-Atrium Segmentation tools">
+                <li>PyTorch</li><li>3D U-Net</li><li>NIfTI</li><li>Streamlit</li>
+              </ul>
+              <div class="project-links" aria-label="3D Left-Atrium Segmentation links">
+                <span class="project-link-item"><a href="mailto:jschwartz1125@gmail.com">Request project details</a></span>
+              </div>
+            </div>
+            <figure class="project-visual">
+              <div class="project-image-frame">
+                <img src="assets/projects/left-atrium-validation-v2.png" alt="Two cardiac MRI validation examples showing input images, ground-truth left-atrium masks, and predicted masks" loading="lazy" />
+              </div>
+              <figcaption>Held-out validation slices with the MRI input, ground-truth mask, and predicted segmentation.</figcaption>
+            </figure>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="project-number">03</span>
+              <p class="project-eyebrow">Web Development · Data Product</p>
+              <h3>Interactive Game Guide</h3>
+              <p class="project-description">Built and deployed a responsive game-discovery application with keyword search, genre, platform, developer, and Metacritic filters, plus detailed game views and a wishlist workflow.</p>
+              <p class="project-result"><strong>What the evaluation showed</strong>The application is live on GitHub Pages and turns a large catalog into a practical, searchable interface for finding games across platforms and genres.</p>
+              <ul class="tool-list" aria-label="Interactive Game Guide tools">
+                <li>React</li><li>JavaScript</li><li>Search &amp; filtering</li><li>GitHub Pages</li>
+              </ul>
+              <div class="project-links" aria-label="Interactive Game Guide links">
+                <span class="project-link-item"><a href="https://jjs21b.github.io/video-visual/" target="_blank" rel="noreferrer">Open live site</a></span>
+                <span class="project-link-item"><span aria-hidden="true">·</span><a href="https://github.com/jjs21b" target="_blank" rel="noreferrer">GitHub profile</a></span>
+              </div>
+            </div>
+            <figure class="project-visual">
+              <div class="project-image-frame">
+                <img src="assets/projects/game-guide-live-v2.jpg" alt="Live Game Guide interface with search filters and a responsive catalog of video games" loading="lazy" />
+              </div>
+              <figcaption>The live catalog view combines multi-field filtering with browsable game cards and wishlist access.</figcaption>
+            </figure>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="project-number">04</span>
+              <p class="project-eyebrow">Scientific ML · Atmospheric Data Assimilation</p>
+              <h3>Score Filter vs. LETKF</h3>
+              <p class="project-description">Designed four observing-system simulation experiments comparing an Ensemble Score Filter, tuned LETKF, and a no-assimilation baseline in the SPEEDY global atmospheric model using shared truth, backgrounds, and observations.</p>
+              <p class="project-result"><strong>What the evaluation showed</strong>Across 80-member ensembles and 30 assimilation cycles, no method dominated: the score filter led under fully nonlinear arctangent observations, while LETKF was stronger in linear, coupled-wind, and pressure-only settings.</p>
+              <ul class="tool-list" aria-label="Score Filter vs. LETKF tools">
+                <li>Python</li><li>Fortran</li><li>SPEEDY</li><li>NetCDF</li><li>Slurm</li>
+              </ul>
+              <div class="project-links" aria-label="Score Filter vs. LETKF links">
+                <span class="project-link-item"><a href="assets/score-filter-letkf-master-project-v2.pdf" target="_blank" rel="noreferrer">Read the full report</a></span>
+                <span class="project-link-item"><span aria-hidden="true">·</span><a href="mailto:jschwartz1125@gmail.com">Request code details</a></span>
+              </div>
+            </div>
+            <figure class="project-visual">
+              <div class="project-image-frame">
+                <img src="assets/projects/score-filter-letkf-rmse-v2.png" alt="Four RMSE plots comparing Ensemble Score Filter, LETKF, and no-assimilation results across atmospheric variables" loading="lazy" />
+              </div>
+              <figcaption>In the all-arctangent experiment, the score filter produced lower analysis RMSE across wind, temperature, and pressure.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-intro">
+          <p class="kicker">About</p>
+          <h2>Scientific curiosity, backed by careful implementation.</h2>
+          <p>My work sits at the intersection of research, software, and data. I enjoy turning an open-ended question into a controlled experiment, investigating unexpected results, and building tools that make the next analysis faster and more trustworthy.</p>
+        </div>
+        <div class="capability-list">
+          <article><span>01</span><div><h3>Machine learning</h3><p>PyTorch, CNNs, U-Net architectures, preprocessing, training, validation, and error analysis.</p></div></article>
+          <article><span>02</span><div><h3>Scientific computing</h3><p>Python, Fortran, NumPy, pandas, xarray, NetCDF, Linux, HPC, and Slurm.</p></div></article>
+          <article><span>03</span><div><h3>Evaluation &amp; research</h3><p>Controlled experiments, baselines, diagnostics, reproducibility, visualization, and technical communication.</p></div></article>
+          <article><span>04</span><div><h3>Data products</h3><p>Interactive tools, search and filtering experiences, dashboards, and clear interfaces for technical results.</p></div></article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <p class="kicker">Get in touch</p>
+        <h2>Interested in working together?</h2>
+        <p>I&apos;m open to opportunities in machine learning, data science, scientific computing, research engineering, and adjacent technical roles.</p>
+        <div class="contact-links">
+          <a href="mailto:jschwartz1125@gmail.com">jschwartz1125@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jack-schwartz-54a89228b" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/jjs21b" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+
+      <footer><span>© 2026 Jack Schwartz</span><a href="#top">Back to top ↑</a></footer>
+    </main>
+  </body>
+</html>
